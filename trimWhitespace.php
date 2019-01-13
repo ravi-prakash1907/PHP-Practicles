@@ -27,6 +27,11 @@ function trimW(){
   <body>
 
     <header class="text-center"> <h1>Remove all Whitespaces!</h1> </header>
+
+    <div id="menu">
+
+    </div>
+
     <form action="" method="POST" class="form">
       <?= trimW(); ?>
 

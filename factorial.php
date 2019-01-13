@@ -35,6 +35,11 @@ function fact(){
   <body>
 
     <header class="text-center">    <h1>Get Factorial</h1>    </header>
+
+    <div id="menu">
+
+    </div>
+
     <form action="" method="POST" class="form">
       <?= fact(); ?>
 

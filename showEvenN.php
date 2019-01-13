@@ -28,6 +28,11 @@ function solution(){
   <body>
 
     <header class="text-center">    <h1>Display initial N even numbers.</h1>    </header>
+
+    <div id="menu">
+
+    </div>
+    
     <form action="" method="POST" class="form">
 
       <h3>Enter the value of <b><em>n</em></b>: </h3> <br />

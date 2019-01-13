@@ -43,6 +43,11 @@ function main(){
   <body>
 
     <header class="text-center">    <h1>Sort the Array</h1>    </header> <br />
+
+    <div id="menu">
+
+    </div>
+    
     <form action="" method="POST" class="form">
 
       <h3>Enter number of items: </h3> <br />

@@ -46,6 +46,11 @@ function main(){
         <h1>Check for <em>lower case</em>!</h1> <br />
         <h3>(It tells if you have a string only contaning <i>letters</i> in LOWER CASE charectors.) </h3>
     </header>
+
+    <div id="menu">
+
+    </div>
+    
     <form action="" method="POST" class="form">
       <?= main(); ?>
 

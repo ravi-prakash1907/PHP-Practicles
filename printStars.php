@@ -42,6 +42,10 @@ function solution(){
       </p>
     </header>
 
+    <div id="menu">
+
+    </div>
+    
     <form action="" method="POST" class="form">
 
       <h3>Enter the number of rows: </h3> <br />

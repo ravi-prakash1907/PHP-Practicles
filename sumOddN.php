@@ -39,6 +39,11 @@ function solution(){
   <body>
 
     <header class="text-center">    <h1>Odd Sum</h1>    </header>
+
+    <div id="menu">
+
+    </div>
+    
     <form action="" method="POST" class="form">
       <?= solution(); ?>
 

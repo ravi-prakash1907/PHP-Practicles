@@ -44,6 +44,11 @@ function reverse(){
   <body>
 
     <header class="text-center">    <h1>Reverse the String</h1>    </header>
+
+    <div id="menu">
+
+    </div>
+    
     <form action="" method="POST" class="form">
       <?= reverse(); ?>
 

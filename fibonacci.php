@@ -41,6 +41,11 @@ function main(){
   <body>
 
     <header class="text-center">    <h1>Show Fibonacci Series</h1>    </header>
+
+    <div id="menu">
+
+    </div>
+    
     <form action="" method="POST" class="form">
 
       <h3>Enter the number: </h3> <br />
