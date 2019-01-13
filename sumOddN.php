@@ -1,26 +1,24 @@
 <?php
+    function sum($n){
+      $s = 0;
+
+      for ($i=1; $i < 2*$n; $i+=2)
+        $s += $i;
+
+      return $s;
+    }
+
 function solution(){
   if(isset($_POST['submit'])){
     $n = $_POST['num'];
-    $flag = 0;  // 0 is false
+    $oddSum = sum($n);
 
-    for ($i = 2; $i < $n; $i++)
-    {
-     if($n%$i==0)
-       break;
-     else
-       continue;
+    if($n > 0){
+      $message = "Sum of first ". $n ." odd numbers is:  ". $oddSum;
     }
-
-    if($i==$n)
-      $flag = 1;
-    else
-      $flag = 0;
-
-    if($flag == 0)
-      $message = "Oops!! Given number i.e. " . $n . " is not Prime.";
-    else
-      $message = "Yeah!! Given number i.e. " . $n . " is Prime.";
+    else{
+      $message = "Wrong output!! Enter a valuue greater then 0! ";
+    }
 
     echo "<script type='text/javascript'>
       alert('". $message ."');
@@ -40,15 +38,15 @@ function solution(){
 
   <body>
 
-    <header class="text-center">    <h1>Check for Prime</h1>    </header>
+    <header class="text-center">    <h1>Odd Sum</h1>    </header>
     <form action="" method="POST" class="form">
       <?= solution(); ?>
 
-      <h3>Enter the number: </h3> <br />
+      <h3>Enter the value of <b><em>n</em></b>: </h3> <br />
       <div class="form-group">
         <center>
-          <input type="number" name="num" class="inputBox" placeholder="Your Number" /> <br />
-          <button type="submit" name="submit">Check</button> <br />
+          <input type="number" name="num" class="inputBox" placeholder="Your Number" />  <br />
+          <button type="submit" name="submit">Check</button>  <br />
         </center>
       </div>
 

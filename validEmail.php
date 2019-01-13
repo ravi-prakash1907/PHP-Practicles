@@ -1,20 +1,13 @@
 <?php
-function fact(){
+function solution(){
   if(isset($_POST['submit'])){
-    $num = $_POST['num'];
-    $fact = 1;
+    $email = $_POST['mail'];
 
-    if($num < 0)
-      $message = "Number can not be negative!!  Try again!";
-    elseif ($num == 0) {
-      $message = "0! = ".$fact;
-    }
-    else {
-      for ($i = $num; $i > 0; $i--)
-          $fact *= $i;
 
-      $message = $num."! = ".$fact;
-    }
+    if (filter_var($email, FILTER_VALIDATE_EMAIL))
+         $message =  $email . " = Valid.";
+    else
+        $message =  $email . " = Invalid.";
 
     echo "<script type='text/javascript'>
       alert('". $message ."');
@@ -34,15 +27,16 @@ function fact(){
 
   <body>
 
-    <header class="text-center">    <h1>Get Factorial</h1>    </header>
+    <header class="text-center">    <h1>Validate an E-Mail</h1>    </header>
     <form action="" method="POST" class="form">
-      <?= fact(); ?>
+      <?= solution(); ?>
 
       <h3>Enter the number: </h3> <br />
       <div class="form-group">
         <center>
-          <input type="number" name="num" class="inputBox" placeholder="Your Number" /> <br />
-          <button type="submit" name="submit">Find Now</button> <br />
+          <!--  type="email"  also validates it  -->
+          <input type="text" name="mail" class="inputBox" placeholder="Your Number" /> <br />
+          <button type="submit" name="submit">Check</button> <br />
         </center>
       </div>
 

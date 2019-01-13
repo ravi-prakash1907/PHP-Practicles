@@ -1,24 +1,30 @@
 <?php
-function fact(){
-  if(isset($_POST['submit'])){
-    $num = $_POST['num'];
-    $fact = 1;
-
-    if($num < 0)
-      $message = "Number can not be negative!!  Try again!";
-    elseif ($num == 0) {
-      $message = "0! = ".$fact;
-    }
+  function fib($num){
+    if($num == 0 || $num == 1)
+      return $num;
     else {
-      for ($i = $num; $i > 0; $i--)
-          $fact *= $i;
-
-      $message = $num."! = ".$fact;
+      return fib($num-1)+fib($num-2);
     }
+  }
 
-    echo "<script type='text/javascript'>
-      alert('". $message ."');
-    </script>";
+function main(){
+  if(isset($_POST['submit'])){
+    $n = $_POST['num'];
+
+    if($n < 0){
+      $message = "Number can not be negative!!  Try again!";
+
+            echo "<script type='text/javascript'>
+              alert('". $message ."');
+            </script>";
+      }
+    else {
+      for ($i = 0; $i < $n; $i++){
+        echo fib($i);
+        if($i != $n-1)
+         echo ", ";
+       }
+    }
   }
 }
 ?>
@@ -34,15 +40,17 @@ function fact(){
 
   <body>
 
-    <header class="text-center">    <h1>Get Factorial</h1>    </header>
+    <header class="text-center">    <h1>Show Fibonacci Series</h1>    </header>
     <form action="" method="POST" class="form">
-      <?= fact(); ?>
 
       <h3>Enter the number: </h3> <br />
       <div class="form-group">
         <center>
           <input type="number" name="num" class="inputBox" placeholder="Your Number" /> <br />
-          <button type="submit" name="submit">Find Now</button> <br />
+          <button type="submit" name="submit">Show</button> <br />
+          <p>
+              <?= main(); ?>
+          </p>
         </center>
       </div>
 
