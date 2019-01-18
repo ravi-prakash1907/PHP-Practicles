@@ -10,7 +10,7 @@ function solution(){
       </script>";
       exit();
     }else {
-      echo "<font size='3em'>".
+      echo "<font size='3em' style='float: left;'>".
            "(Here   rows = ".$n.
            ")</font><br /><br />";
     }
@@ -38,7 +38,7 @@ function solution(){
 
     <header class="text-center">
       <h1>Print stars like:</h1>
-      <p id="stars" class="para">
+      <p class="para">
         *         <br />
         **        <br />
         ***       <br />

@@ -15,18 +15,27 @@ function main(){
   if(isset($_POST['submit'])){ //check if form was submitted
     $color = $_POST['color'];
     $s = sizeof($color); //size of array
+    $message = "";
 
     for ($i=0; $i < $s; $i++) {
-      echo $color[$i].", ";
+      $message = $message.$color[$i];
+      if($i!=$s-1)
+        $message = $message.", ";
     }
-    echo "<br />";
+
+    echo "<font size='4em' style='width: -moz-max-content; float: left;'>". $message. "</font>";
+
     sort($color);   //in ascending order    Inbuilt Function
 
-    echo '<ul>';
+    $message = "";
+
+    $message = $message . '<ul style="padding-left: 30%;">';
     for ($i=0; $i < $s; $i++) {
-      echo '<li>'.$color[$i].'</li>';
+      $message = $message . '<li>'.$color[$i].'</li>';
     }
-    echo '</ul>';
+    $message = $message . '</ul>';
+
+    echo $message;
   }
 }
 ?>
@@ -58,7 +67,7 @@ function main(){
             echo '<input type="number" name="size" class="inputBox" placeholder="A positive no." /> <br />
                   <button type="submit" name="getSize">Next</button> <br />';
           ?>
-          <p>
+          <p id="para">
             <?=   main();   ?>
           </p>
         </center>

@@ -10,6 +10,7 @@
 function main(){
   if(isset($_POST['submit'])){
     $n = $_POST['num'];
+    $message = "";
 
     if($n < 0){
       $message = "Number can not be negative!!  Try again!";
@@ -19,13 +20,17 @@ function main(){
             </script>";
       }
     else {
-      echo '<p  size="3em" style="float: left; color: blue;">(First '.$n.' terms of <i>Fibonacii Series</i>)</p><br /><br />';      
+      echo '<p  size="3em" style="float: left; color: blue;">(First '.$n.' terms of <i>Fibonacii Series</i>)</p><br /><br />';
       echo "<br /><br />";
       for ($i = 0; $i < $n; $i++){
-        echo fib($i);
+
+        $message = $message . fib($i);
         if($i != $n-1)
-         echo ", ";
+         $message = $message . ", ";
+        if($i%7 == 0 && $i>0)
+          $message = $message . "<br /><br />";
        }
+       echo "<font>".$message."</font>";
     }
   }
 }

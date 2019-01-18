@@ -1,12 +1,6 @@
 /*******************************************************/
 
 /*    TAGS    */
-select, optgroup, input {
-    -moz-appearance:textfield;
-    margin: 3%;
-    width: auto;
-}
-
 body{
   background: #b2dfdb;
 }
@@ -25,13 +19,19 @@ footer{
   border-color: #4000ff;
 }
 
+input, select, optgroup {
+    -moz-appearance:textfield;
+    margin: 3%;
+    width: auto;
+}
+
 a{
   color: green;
   text-decoration: none;
 }
 
 h1{
-  font-family: impact;
+  font-family: algerian;
   color: red;
   font-weight: bold;
   text-align: center;
@@ -62,8 +62,14 @@ p{
   font-weight: bold;
 }
 
-font{
-  float: left;
+button{
+  -moz-appearance:textfield;
+  margin: 3%;
+  width: 50%;
+  padding: 2% 1%;
+  border: none;
+  border-radius: 8%;
+  transition: all 0.3s ease;
 }
 
 /*******************************************************/
@@ -87,16 +93,13 @@ font{
 
 .para{
   padding: 1% 50% 0% 50% !important;
+  transition: all 0.2s ease;
 }
 /*******************************************************/
 
 /*    ID    */
 
-#container{
-
-}
-
-#para{
+#para, ul{
   padding: 5% 25%;
   text-align-last: justify;
   color: blue;
@@ -106,6 +109,12 @@ font{
 /*******************************************************/
 
 /*    HOVER or ACTIVE or VISITED    */
+button:hover{
+  border: solid;
+  border-width: thin;
+  border-radius: 8%;
+  transition: all 0.3s ease;
+}
 
 .form:hover {
   box-shadow: 0px 0px 12px yellow;
