@@ -51,7 +51,7 @@ function main(){
 
   <body>
 
-    <header class="text-center">    <h1>Sort the Array</h1>    </header> <br />
+    <header class="text-center">    <h1>The color list</h1>    </header> <br />
 
     <div id="container">
     <div id="menu">
@@ -66,10 +66,9 @@ function main(){
           <?php
             echo '<input type="number" name="size" class="inputBox" placeholder="A positive no." /> <br />
                   <button type="submit" name="getSize">Next</button> <br />';
+
+            main();
           ?>
-          <p id="para">
-            <?=   main();   ?>
-          </p>
         </center>
       </div>
 

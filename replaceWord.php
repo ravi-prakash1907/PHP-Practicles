@@ -31,8 +31,8 @@ function main(){
   <body>
 
     <header class="text-center">
-      <h1>Check for <em>lower case</em>!</h1> <br />
-      <h3>(It tells if you have a string only contaning <i>letters</i> in LOWER CASE charectors.) </h3> <br />
+      <h1>Replace <em style="text-transform: lowercase">'the'</em> word!</h1> <br />
+      <p id="sub-heading">(It replaces first accurance of <i>'the'</i> with <i>'That'</i>.) </p> <br />
     </header>
 
     <div id="container">

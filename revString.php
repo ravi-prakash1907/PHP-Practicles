@@ -60,10 +60,10 @@ function reverse(){
           <input type="text" name="string" class="inputBox" placeholder="Your String" /> <br />
 
           <abbr title="Using inbuilt function strrev()">
-            <button type="submit" name="submit1">Reverse 1</button>
+            <button type="submit" name="submit1" style="float: left; margin-left: 25%; width: 23%">Reverse 1</button>
           </abbr>
           <abbr title="Using selfdefined function.">
-            <button type="submit" name="submit2">Reverse 2</button>
+            <button type="submit" name="submit2" style="float: left; margin-left: 1%; width: 23%">Reverse 2</button>
           </abbr>
         </center>
       </div>
