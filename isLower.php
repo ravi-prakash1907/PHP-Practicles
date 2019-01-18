@@ -47,15 +47,16 @@ function main(){
         <h3>(It tells if you have a string only contaning <i>letters</i> in LOWER CASE charectors.) </h3>
     </header>
 
+    <div id="container">
     <div id="menu">
 
     </div>
-    
+
     <form action="" method="POST" class="form">
       <?= main(); ?>
 
-      <h3>Enter your string: </h3> <br />
       <div class="form-group">
+      <h3>Enter your string: </h3> <br />
         <center>
           <input type="text" name="string" class="inputBox" placeholder="Your String" /> <br />
           <button type="submit" name="check">Check</button> <br />
@@ -63,11 +64,10 @@ function main(){
       </div>
 
     </form>
+  </div>
 
     <footer>
-      <p>
-        &copy; <?php echo date("Y"); ?> | by <a href="https://linktr.ee/ravi_prakash1907" target="_blank">Ravi</a>
-      </p>
+        &copy; <a href="https://linktr.ee/ravi_prakash1907" target="_blank">Ravi</a> | <?php echo date("Y"); ?>
     </footer>
 
   </body>

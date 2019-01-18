@@ -41,17 +41,18 @@ function largest(){
 
   <body>
 
-    <header class="text-center">    <h1>Get Largest</h1>    </header>
+    <header class="text-center">    <h1>Find Largest Number</h1>    </header>
 
+    <div id="container">
     <div id="menu">
 
     </div>
-    
+
     <form action="" method="POST" class="form">
       <?= largest(); ?>
 
-      <h3>Enter three numbers: </h3> <br />
       <div class="form-group">
+      <h3>Enter three numbers: </h3> <br />
         <center>
           <input type="number" name="num1" class="inputBox" placeholder="First Number" />  <br />
           <input type="number" name="num2" class="inputBox" placeholder="Second Number" />  <br />
@@ -61,11 +62,10 @@ function largest(){
       </div>
 
     </form>
+  </div>
 
     <footer>
-      <p>
-        &copy; <?php echo date("Y"); ?> | by <a href="https://linktr.ee/ravi_prakash1907" target="_blank">Ravi</a>
-      </p>
+        &copy; <a href="https://linktr.ee/ravi_prakash1907" target="_blank">Ravi</a> | <?php echo date("Y"); ?>
     </footer>
 
   </body>

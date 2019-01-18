@@ -46,6 +46,7 @@ function main(){
 
     <header class="text-center">   <h1>Birthday Countdown</h1>    </header>
 
+    <div id="container">
     <div id="menu">
 
     </div>
@@ -53,8 +54,8 @@ function main(){
     <form action="" method="POST" class="form">
       <?= main(); ?>
 
-      <h3>Enter your date of birth: </h3> <br />
       <div class="form-group">
+      <h3>Enter your date of birth: </h3> <br />
         <center>
           <input type="date" name="dob" class="inputBox" placeholder="Enter DOB" /> <br />
           <button type="submit" name="submit">Check</button> <br />
@@ -62,11 +63,10 @@ function main(){
       </div>
 
     </form>
+  </div>
 
     <footer>
-      <p>
-        &copy; <?php echo date("Y"); ?> | by <a href="https://linktr.ee/ravi_prakash1907" target="_blank">Ravi</a>
-      </p>
+        &copy; <a href="https://linktr.ee/ravi_prakash1907" target="_blank">Ravi</a> | <?php echo date("Y"); ?>
     </footer>
 
   </body>

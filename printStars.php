@@ -9,6 +9,10 @@ function solution(){
         alert('". $message ."');
       </script>";
       exit();
+    }else {
+      echo "<font size='3em'>".
+           "(Here   rows = ".$n.
+           ")</font><br /><br />";
     }
 
     for ($i = 1; $i <= $n; $i++){
@@ -34,7 +38,7 @@ function solution(){
 
     <header class="text-center">
       <h1>Print stars like:</h1>
-      <p>
+      <p id="stars" class="para">
         *         <br />
         **        <br />
         ***       <br />
@@ -42,29 +46,34 @@ function solution(){
       </p>
     </header>
 
+    <div id="container">
     <div id="menu">
 
     </div>
-    
+
     <form action="" method="POST" class="form">
 
-      <h3>Enter the number of rows: </h3> <br />
       <div class="form-group">
+      <h3>Enter the number of rows: </h3> <br />
         <center>
           <input type="number" name="num" class="inputBox" placeholder="Rows" /> <br />
           <button type="submit" name="submit">Check</button> <br />
         </center>
+
+        <p id="para">
+          <br /> <?= solution(); ?> <br />
+        </p>
+
       </div>
 
     </form>
+  </div>
 
-    <?= solution(); ?>
+<!--    <= solution(); ?>      -->
 
 
     <footer>
-      <p>
-        &copy; <?php echo date("Y"); ?> | by <a href="https://linktr.ee/ravi_prakash1907" target="_blank">Ravi</a>
-      </p>
+        &copy; <a href="https://linktr.ee/ravi_prakash1907" target="_blank">Ravi</a> | <?php echo date("Y"); ?>
     </footer>
 
   </body>

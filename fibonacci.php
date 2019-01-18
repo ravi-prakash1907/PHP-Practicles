@@ -19,6 +19,8 @@ function main(){
             </script>";
       }
     else {
+      echo '<p  size="3em" style="float: left; color: blue;">(First '.$n.' terms of <i>Fibonacii Series</i>)</p><br /><br />';      
+      echo "<br /><br />";
       for ($i = 0; $i < $n; $i++){
         echo fib($i);
         if($i != $n-1)
@@ -42,29 +44,29 @@ function main(){
 
     <header class="text-center">    <h1>Show Fibonacci Series</h1>    </header>
 
+    <div id="container">
     <div id="menu">
 
     </div>
-    
+
     <form action="" method="POST" class="form">
 
-      <h3>Enter the number: </h3> <br />
       <div class="form-group">
+      <h3>Enter the number: </h3> <br />
         <center>
           <input type="number" name="num" class="inputBox" placeholder="Your Number" /> <br />
           <button type="submit" name="submit">Show</button> <br />
-          <p>
+          <p id="para">
               <?= main(); ?>
           </p>
         </center>
       </div>
 
     </form>
+  </div>
 
     <footer>
-      <p>
-        &copy; <?php echo date("Y"); ?> | by <a href="https://linktr.ee/ravi_prakash1907" target="_blank">Ravi</a>
-      </p>
+        &copy; <a href="https://linktr.ee/ravi_prakash1907" target="_blank">Ravi</a> | <?php echo date("Y"); ?>
     </footer>
 
   </body>

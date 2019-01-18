@@ -28,6 +28,7 @@ function trimW(){
 
     <header class="text-center"> <h1>Remove all Whitespaces!</h1> </header>
 
+    <div id="container">
     <div id="menu">
 
     </div>
@@ -35,8 +36,8 @@ function trimW(){
     <form action="" method="POST" class="form">
       <?= trimW(); ?>
 
-      <h3>Enter your string: </h3> <br />
       <div class="form-group">
+      <h3>Enter your string: </h3> <br />
         <center>
           <input type="text" name="string" class="inputBox" placeholder="Your String" />  <br />
           <button type="submit" name="check">Trim Whitespaces</button>  <br />
@@ -44,11 +45,10 @@ function trimW(){
       </div>
 
     </form>
+  </div>
 
     <footer>
-      <p>
-        &copy; <?php echo date("Y"); ?> | by <a href="https://linktr.ee/ravi_prakash1907" target="_blank">Ravi</a>
-      </p>
+        &copy; <a href="https://linktr.ee/ravi_prakash1907" target="_blank">Ravi</a> | <?php echo date("Y"); ?>
     </footer>
 
   </body>

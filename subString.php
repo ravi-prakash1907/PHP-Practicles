@@ -29,15 +29,16 @@ function main(){
 
     <header class="text-center">    <h1>Check for Sub-String</h1>    </header>
 
+    <div id="container">
     <div id="menu">
 
     </div>
-    
+
     <form action="" method="POST" class="form">
       <?= main(); ?>
 
-      <h3>Enter the strings: </h3> <br />
       <div class="form-group">
+      <h3>Enter the strings: </h3> <br />
         <center>
           <input type="text" name="container" class="inputBox" placeholder="Main String" />  <br />
           <input type="text" name="content" class="inputBox" placeholder="Sub-String (to check if it exists)" />  <br />
@@ -46,11 +47,10 @@ function main(){
       </div>
 
     </form>
+  </div>
 
     <footer>
-      <p>
-        &copy; <?php echo date("Y"); ?> | by <a href="https://linktr.ee/ravi_prakash1907" target="_blank">Ravi</a>
-      </p>
+        &copy; <a href="https://linktr.ee/ravi_prakash1907" target="_blank">Ravi</a> | <?php echo date("Y"); ?>
     </footer>
 
   </body>

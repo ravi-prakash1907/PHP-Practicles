@@ -40,15 +40,16 @@ function solution(){
 
     <header class="text-center">    <h1>Odd Sum</h1>    </header>
 
+    <div id="container">
     <div id="menu">
 
     </div>
-    
+
     <form action="" method="POST" class="form">
       <?= solution(); ?>
 
-      <h3>Enter the value of <b><em>n</em></b>: </h3> <br />
       <div class="form-group">
+      <h3>Enter the value of <b><em>n</em></b>: </h3> <br />
         <center>
           <input type="number" name="num" class="inputBox" placeholder="Your Number" />  <br />
           <button type="submit" name="submit">Check</button>  <br />
@@ -56,11 +57,10 @@ function solution(){
       </div>
 
     </form>
+  </div>
 
     <footer>
-      <p>
-        &copy; <?php echo date("Y"); ?> | by <a href="https://linktr.ee/ravi_prakash1907" target="_blank">Ravi</a>
-      </p>
+        &copy; <a href="https://linktr.ee/ravi_prakash1907" target="_blank">Ravi</a> | <?php echo date("Y"); ?>
     </footer>
 
   </body>
