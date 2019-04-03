@@ -114,11 +114,16 @@ button{
 /*******************************************************/
 
 /*    HOVER or ACTIVE or VISITED    */
+header:hover {
+  text-shadow: 0px 0px 5px black;
+}
+
 button:hover{
   border: solid;
   border-width: thin;
   border-radius: 8%;
   transition: all 0.3s ease;
+  text-shadow: -2px 2px 3px red;
 }
 
 input:active, input:hover{

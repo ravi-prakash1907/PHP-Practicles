@@ -51,7 +51,7 @@ function largest(){
           <button type="submit" name="submit">Login</button> <br />
 
           <!--     Additional       -->
-          <a href="signup.php">Sign Up</a><br />
+          <a href="login.php">Sign In</a><br />
 
 
         </center>
