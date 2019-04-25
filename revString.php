@@ -1,4 +1,6 @@
 <?php
+require_once "templates/header.php";
+
     function rev1($x){
       return strrev($x);
     }
@@ -32,16 +34,6 @@ function reverse(){
   }
 }
 ?>
-
-<!Doctype html>
-<html>
-  <head>
-  	<meta charset="utf-8" />
-    <title>PHP Practicals</title>
-    <link href="css/stylesheet1.css" rel="stylesheet" />
-  </head>
-
-  <body>
 
     <header class="text-center">    <h1>Reverse the String</h1>    </header>
 

@@ -8,11 +8,6 @@ if(isset($_POST['submit'])){
 
   header("Location:".$page);
 }
-else {
-  echo "<script type='text/javascript'>
-    alert('". $message ."');
-  </script>";
-}
 ?>
 
   <div id="container">

@@ -1,4 +1,6 @@
 <?php
+require_once "templates/header.php";
+
 function fact(){
   if(isset($_POST['submit'])){
     $num = $_POST['num'];
@@ -23,23 +25,9 @@ function fact(){
 }
 ?>
 
-<!Doctype html>
-<html>
-
-  <head>
-  	<meta charset="utf-8" />
-    <title>PHP Practicals</title>
-    <link href="css/stylesheet1.css" rel="stylesheet" />
-  </head>
-
-  <body>
-
     <header class="text-center">    <h1>Get Factorial</h1>    </header>
 
     <div id="container">
-    <div id="menu">
-
-    </div>
 
     <form action="" method="POST" class="form">
       <?= fact(); ?>

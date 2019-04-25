@@ -1,0 +1,18 @@
+/*******************************************************/
+
+footer{
+  margin: 3%;
+  padding: 2%;
+  color: green;
+  border-top-style: solid;
+  border-width: thin;
+  text-align: right;
+  border-color: #4000ff;
+}
+
+.copywrite{
+  color: green;
+  text-decoration: none;
+}
+
+/*******************************************************/

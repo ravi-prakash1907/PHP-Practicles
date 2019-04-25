@@ -1,4 +1,6 @@
 <?php
+require_once "templates/header.php";
+
   function palindrome($x){
 
     $str = $x;
@@ -29,17 +31,6 @@ function main(){
   }
 }
 ?>
-
-<!Doctype html>
-<html>
-
-  <head>
-  	<meta charset="utf-8" />
-    <title>PHP Practicals</title>
-    <link href="css/stylesheet1.css" rel="stylesheet" />
-  </head>
-
-  <body>
 
     <header class="text-center">    <h1>Check for Pelindrome!</h1>    </header>
 

@@ -1,4 +1,6 @@
 <?php
+require_once "templates/header.php";
+
   function createArr(){
     if(isset($_POST['getSize'])){
       $sz = $_POST['size'];
@@ -38,17 +40,6 @@ function main(){
   }
 }
 ?>
-
-<!Doctype html>
-<html>
-
-  <head>
-  	<meta charset="utf-8" />
-    <title>PHP Practicals</title>
-    <link href="css/stylesheet1.css" rel="stylesheet" />
-  </head>
-
-  <body>
 
     <header class="text-center">
       <div class="menu">

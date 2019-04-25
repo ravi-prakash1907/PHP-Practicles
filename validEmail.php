@@ -1,4 +1,6 @@
 <?php
+require_once "templates/header.php";
+
 function solution(){
   if(isset($_POST['submit'])){
     $email = $_POST['mail'];
@@ -23,17 +25,6 @@ function solution(){
 }
 ?>
 
-<!Doctype html>
-<html>
-
-  <head>
-  	<meta charset="utf-8" />
-    <title>PHP Practicals</title>
-    <link href="css/stylesheet1.css" rel="stylesheet" />
-  </head>
-
-  <body>
-
     <header class="text-center">    <h1>Validate an E-Mail</h1>    </header>
 
     <div id="container">
@@ -45,10 +36,10 @@ function solution(){
       <?= solution(); ?>
 
       <div class="form-group">
-      <h3>Enter the number: </h3> <br />
+      <h3>Enter the EMAIL: </h3> <br />
         <center>
           <!--  type="email"  also validates it  -->
-          <input type="text" name="mail" class="inputBox" placeholder="Your Number" /> <br />
+          <input type="text" name="mail" class="inputBox" placeholder="Your String" /> <br />
           <button type="submit" name="submit">Check</button> <br />
         </center>
       </div>

@@ -1,4 +1,6 @@
 <?php
+require_once "templates/header.php";
+
 function trimW(){
   if(isset($_POST['check'])){
     $str = $_POST['string'];
@@ -14,17 +16,6 @@ function trimW(){
   }
 }
 ?>
-
-<!Doctype html>
-<html>
-
-  <head>
-  	<meta charset="utf-8" />
-    <title>PHP Practicals</title>
-    <link href="css/stylesheet1.css" rel="stylesheet" />
-  </head>
-
-  <body>
 
     <header class="text-center"> <h1>Remove all Whitespaces!</h1> </header>
 

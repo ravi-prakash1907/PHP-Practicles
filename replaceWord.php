@@ -1,4 +1,6 @@
 <?php
+require_once "templates/header.php";
+
     function str_replace_first($from, $to, $content){
         $from = '/'.preg_quote($from, '/').'/';
         return preg_replace($from, $to, $content, 1);
@@ -18,17 +20,6 @@ function main(){
   }
 }
 ?>
-
-<!Doctype html>
-<html>
-
-  <head>
-  	<meta charset="utf-8" />
-    <title>PHP Practicals</title>
-    <link href="css/stylesheet1.css" rel="stylesheet" />
-  </head>
-
-  <body>
 
     <header class="text-center">
       <h1>Replace <em style="text-transform: lowercase">'the'</em> word!</h1> <br />

@@ -1,4 +1,6 @@
 <?php
+require_once "templates/header.php";
+
   function even($n){
     echo "<br /><br />";
     $s = 0;
@@ -16,17 +18,6 @@ function solution(){
   }
 }
 ?>
-
-<!Doctype html>
-<html>
-
-  <head>
-  	<meta charset="utf-8" />
-    <title>PHP Practicals</title>
-    <link href="css/stylesheet1.css" rel="stylesheet" />
-  </head>
-
-  <body>
 
     <header class="text-center">    <h1>Display initial N even numbers.</h1>    </header>
 

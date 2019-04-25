@@ -1,4 +1,6 @@
 <?php
+require_once "templates/header.php";
+
 function largest(){
   if(isset($_POST['submit'])){ //check if form was submitted
     $n1 = $_POST['num1'];
@@ -29,17 +31,6 @@ function largest(){
   }
 }
 ?>
-
-<!Doctype html>
-<html>
-
-  <head>
-  	<meta charset="utf-8" />
-    <title>PHP Practicals</title>
-    <link href="css/stylesheet1.css" rel="stylesheet" />
-  </head>
-
-  <body>
 
     <header class="text-center">    <h1>Find Largest Number</h1>    </header>
 
