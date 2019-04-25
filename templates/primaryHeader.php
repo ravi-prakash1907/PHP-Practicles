@@ -8,7 +8,7 @@
         <nav>
           <a href="http://localhost/GitHub/PHP-Practicles/" class="link">Home</a>    |
           <a href="list.pdf" target="_blank" class="link">Practical List</a>    |
-          <a href="#" class="link">About</a>   |
+          <a href="#about" class="link">About</a>   |
           <a href="https://github.com/ravi-prakash1907/PHP-Practicles/" target="_blank" class="link">Source Codes</a>
         </nav>
       </div>

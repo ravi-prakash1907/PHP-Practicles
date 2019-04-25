@@ -23,8 +23,7 @@ if(isset($_POST['submit'])){
 }
 ?>
 
-<div id="background">
-  
+
   <div id="container">
     <form action="" method="POST" class="form">
       <div class="form-group">
@@ -57,6 +56,14 @@ if(isset($_POST['submit'])){
         </center>
       </div>
     </form>
+  </div>
+
+  <div id="about">
+    <h4>About~</h4>
+    <p class="about">This is a dummy website running locally onto this machine. The purpose of this site is to implement and show the functionality of various <b>PHP Practicals</b> as per the syllabus guidelines of <b><i><u>B.Sc. (Hons) Computer Science, University of Delhi</u></i></b>.</p>
+    <p class="about">This is being submitted as the Practical(s) Of the PHP as this is a <b>Skill Enhancement Subject</b> for (Sem-IV) Computer Science students of B.Sc. (Hons).</p>
+    <br /> <br />
+    <p class="about">Visit back to <em>top</em>.   <a href="index.php" class="about top"></u>click here</u></a></p>
   </div>
 
 <?php
