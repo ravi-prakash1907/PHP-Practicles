@@ -59,7 +59,7 @@ function main(){
     <form action="" method="POST" class="form">
 
       <div class="form-group">
-      <h3>Enter three size of array: </h3> <br />
+      <h3>Enter the size of array: </h3> <br />
           <center>
             <?php
               echo '<input type="number" name="size" class="inputBox" placeholder="Size of array" /> <br />
