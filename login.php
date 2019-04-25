@@ -41,9 +41,9 @@ function largest(){
           <input type="password" name="password" class="inputBox" placeholder="Your Password" /> <br />
           <button type="submit" name="submit">Login</button> <br />
 
-          <!--     Additional       -->
+          <!--     Additional     
           <a href="signup.php">Sign Up</a><br />
-
+          -->
 
         </center>
       </div>
