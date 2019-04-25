@@ -1,19 +1,18 @@
 <?php
-require_once "templates/header.php"; 
+require_once "templates/indexHeader.php";
 
 if(isset($_POST['submit'])){
   $page = $_POST['practical'];
 
   $link = "http://localhost/GitHub/PHP-Practicles/" . $page;
-  header("Location:".$link);
-  /*
 
+  header("Location:".$page);
+}
+else {
   echo "<script type='text/javascript'>
     alert('". $message ."');
   </script>";
-  */
 }
-
 ?>
 
   <div id="container">
