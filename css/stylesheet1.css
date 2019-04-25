@@ -76,6 +76,11 @@ button{
 
 /*    CLASS    */
 
+.manu{
+ height: 8px;
+ width: 100%;
+}
+
 .inputBox{
   padding: 1%;
   text-transform: full-width;

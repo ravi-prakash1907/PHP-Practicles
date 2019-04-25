@@ -1,0 +1,62 @@
+/*******************************************************/
+
+/*    TAGS    */
+
+
+header{
+  margin: 3% 0% 5% 0%;
+}
+
+footer{
+  margin: 3%;
+  padding: 2%;
+  color: green;
+  border-top-style: solid;
+  border-width: thin;
+  text-align: right;
+  border-color: #4000ff;
+}
+
+
+h1{
+  font-family: algerian;
+  color: red;
+  font-weight: bold;
+  text-decoration: underline;
+  text-decoration-color: red;
+  text-transform: uppercase;
+}
+
+/***************************************************/
+/**       IDs       **/
+#menu{
+  width: 30%;
+  padding: 1.5% 3%;
+  float: right;
+  color: white;
+  background-color: black;
+}
+
+#title{
+  width: 50%;
+  padding: 1.5% 3%;
+  float: left;
+}
+
+/***************************************************/
+/**       CLASSes       **/
+.header{
+  position: fixed;
+  width: 100%;
+  padding: 1.5% 3%;
+  align-items: center;
+  color: white;
+
+}
+
+/*******************************************************/
+
+/*    HOVER or ACTIVE or VISITED    */
+header:hover {
+  text-shadow: 0px 0px 5px black;
+}

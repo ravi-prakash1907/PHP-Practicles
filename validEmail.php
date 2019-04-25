@@ -3,11 +3,18 @@ function solution(){
   if(isset($_POST['submit'])){
     $email = $_POST['mail'];
 
-
-    if (filter_var($email, FILTER_VALIDATE_EMAIL))
-         $message =  $email . " = Valid.";
-    else
-        $message =  $email . " = Invalid.";
+    define("EMAIL",'/\w*\@\w*\.\w*/');
+    if(isset($_POST['submit'])) {
+        if(isset($email)){
+            if(preg_match(EMAIL, $email)){
+                $message =  $email . ' is a Valid Email';
+            } else {
+                $message =  $email . ' is an Invalid Email';
+            }
+        } else {
+            die("DENIED");
+        }
+    }
 
     echo "<script type='text/javascript'>
       alert('". $message ."');

@@ -50,7 +50,15 @@ function main(){
 
   <body>
 
-    <header class="text-center">    <h1>Sort the Array</h1>    </header>
+    <header class="text-center">
+      <div class="menu">
+        <nav>
+
+        </nav>
+      </div>
+
+      <h1>Sort the Array</h1>
+    </header>
 
     <div id="container">
     <div id="menu">
@@ -74,10 +82,6 @@ function main(){
     </form>
   </div>
 
-    <footer>
-        &copy; <a href="https://linktr.ee/ravi_prakash1907" target="_blank">Ravi</a> | <?php echo date("Y"); ?>
-    </footer>
-
-  </body>
-
-</html>
+<?php
+require_once "templates/footer.php";
+?>
