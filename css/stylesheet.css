@@ -1,72 +1,113 @@
 /*******************************************************/
-/*                        HEADER                       */
-/*******************************************************/
 
 /*    TAGS    */
-
-.header{
-  margin-bottom: 5%;
-  width: 100%;
+body{
+  background: #2f4550; /*  b2dfdb  */
 }
 
-h1{
-  font-family: algerian;
+input, select, optgroup {
+    -moz-appearance:textfield;
+    margin: 3% 0;
+    width: 100%;
+}
+
+h3{
+  font-family: sans-serif;
+  text-decoration: underline;
+  text-decoration-style: double;
+  text-transform: capitalize;
+}
+
+form{
+  margin: 2% 25% 2% 25%;
+  background: #eeeeee;
+  text-align: center;
+  text-align-last: center;
+  width: auto;
+  height: inherit;
+}
+
+p{
+  font-family: impact;
   color: red;
   font-weight: bold;
-  text-decoration: underline;
-  text-decoration-color: red;
-  text-transform: uppercase;
+}
+
+button{
+  -moz-appearance:textfield;
+  margin: 3%;
+  width: 50%;
+  padding: 2% 1%;
+  color: inherit;
+  transition: all 0.5s ease;
+}
+
+a {
+  text-decoration: none;
 }
 
 /*******************************************************/
 
 /*    CLASS    */
 
+.inputBox{
+  padding: 1%;
+  text-transform: full-width;
+}
 
+.form{
+  border-style: double;
+  border-radius: 12% 0;
+}
+
+.form-group{
+  width: 50%;
+  padding: 25%;
+}
+
+.para{
+  padding: 1% 50% 0% 50% !important;
+  transition: all 0.2s ease;
+}
 /*******************************************************/
 
 /*    ID    */
 
-#menu {
-  text-align: right;
-  width: 40%;
-  float: right;
-  margin-left: auto;
-  padding: 0 2% 3% 0;
+#para, ul {
+  padding: 5% 25%;
+  text-align-last: justify;
+  color: blue;
+  font-size: 1.3em;
 }
 
-#title {
-  text-align: left;
-  width: 40%;
-  float: inherit;
-  margin-right: auto;
-  padding: 2% 0 0 3%;
+#sub-heading {
+  width: auto;
+  text-align: center;
 }
 
 /*******************************************************/
 
 /*    HOVER or ACTIVE or VISITED    */
-#title:hover {
-  text-shadow: 0px 0px 1px black;
-}
 
-button:hover{
-  border: solid;
-  border-width: thin;
-  border-radius: 8%;
-  transition: all 0.3s ease;
-  text-shadow: -2px 2px 3px red;
+button:hover, button:visited, button:checked, button:active {
+  background: #2f4550;
+  border-radius: 2%;
+  font-weight: bold;
+  font-size: 12pt;
+  transition: all 0.7s ease-in;
+  text-shadow: 0px 1px 1px red;
 }
 
 input:active, input:hover{
-  box-shadow: 0px 0px 12px #ffca28;
+  box-shadow: 0px 0px 6px #ffca28;
 }
 
 .form:hover {
-  box-shadow: 0px 0px 12px yellow;
+  box-shadow: 0px 0px 8px #77f0b0;
+  transition: all 0.5s ease;
 }
 .form:active {
-  box-shadow: 0px 0px 12px #ffca28;
+  box-shadow: 0px 0px 12px #77f0b0;
 }
 
 /* Webkit browsers like Safari and Chrome */
@@ -75,45 +116,3 @@ input::-webkit-outer-spin-button {
     -webkit-appearance: none;
     margin: 0;
 }
-/*******************************************************/
-/*                         END                         */
-/*******************************************************/
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-/*******************************************************/
-
-/*    HOVER or ACTIVE or VISITED    */
-
-
-
-/*******************************************************/
-
-/*    TAGS    */
-
-
-
-
-/***************************************************/
-/**       IDs       **/
-
-
-/***************************************************/
-/**       CLASSes       **/
-
-
-/*******************************************************/
-
-/*    HOVER or ACTIVE or VISITED    */

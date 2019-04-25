@@ -1,5 +1,18 @@
+<!Doctype html>
+<html>
+
+  <head>
+  	<meta charset="utf-8" />
+    <title>PHP Practicals</title>
+    <link href="css/stylesheet.css" rel="stylesheet" />
+    <link href="css/footer.css" rel="stylesheet" />
+    <link href="css/header.css" rel="stylesheet" />
+  </head>
+
+  <body>
+
 <?php
-require_once "templates/indexHeader.php";
+require_once "templates/primaryHeader.php";
 
 if(isset($_POST['submit'])){
   $page = $_POST['practical'];
@@ -10,13 +23,15 @@ if(isset($_POST['submit'])){
 }
 ?>
 
+<div id="background">
+  
   <div id="container">
     <form action="" method="POST" class="form">
       <div class="form-group">
       <h3>Browse any practical: </h3> <br />
         <center>
           <select name="practical" class="inputBox">
-           <optgroup label="Languages">
+           <optgroup label="Program">
            <option value="largestNum.php">Practical1</option>
            <option value="factorial.php">Practical2</option>
            <option value="prime.php">Practical3</option>

@@ -7,11 +7,12 @@ footer{
   border-top-style: solid;
   border-width: thin;
   text-align: right;
-  border-color: #4000ff;
+  border-color: #fbfcff;
+  color: #5bc2e7;
 }
 
 .copywrite{
-  color: green;
+  color: #5bc2e7;
   text-decoration: none;
 }
 

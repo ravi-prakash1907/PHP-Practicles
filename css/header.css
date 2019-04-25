@@ -1,74 +1,82 @@
-/*******************************************************/
-
 /*    TAGS    */
 
 header{
   margin: 3% 0% 5% 0%;
 }
 
+big{
+  font-family: algerian;
+  color: #77f0b0;
+  font-size: 32pt;
+  font-weight: bold;
+  text-decoration: underline;
+  text-decoration-color: #77f0b0;
+  text-transform: uppercase;
+}
+
 h1{
   font-family: algerian;
-  color: red;
+  color: #5bc2e7;
   font-weight: bold;
   text-align: center;
   text-decoration: underline;
-  text-decoration-color: red;
+  text-decoration-color: #5bc2e7;
   text-transform: uppercase;
+}
+
+nav {
+  font-size: 14pt;
+  font-weight: bold;
+  color: #77f0b0;
 }
 
 /*******************************************************/
 
 /*    CLASS    */
 
-.manu{
- height: 8px;
- width: 100%;
+.siteHeader{
+  margin-bottom: 3%;
+  width: 100%;
 }
+
+.link {
+  color: #d8dbe2;
+  padding: 0 1%;
+}
+
 /*******************************************************/
 
 /*    ID    */
 
-#para, ul {
-  padding: 5% 25%;
-  text-align-last: justify;
-  color: blue;
-  font-size: 1.3em;
+#menu {
+  text-align: right;
+  width: 40%;
+  float: right;
+  margin-left: 60%;
+  margin-bottom: 1%;
+  padding: 0 2% 0% 0;
 }
 
-#sub-heading {
-  width: auto;
-  text-align: center;
+#title {
+  text-align: left;
+  width: 100%;
+  float: inherit;
+  margin-right: 60%;
+  padding: 2% 0 0 2%;
 }
 
+
+#eader {
+  background-color: #fff;
+}
 /*******************************************************/
 
 /*    HOVER or ACTIVE or VISITED    */
-header:hover {
-  text-shadow: 0px 0px 5px black;
+
+#title:hover {
+  text-shadow: 0px 0px 1px #d0ccd0;
 }
 
-button:hover{
-  border: solid;
-  border-width: thin;
-  border-radius: 8%;
-  transition: all 0.3s ease;
-  text-shadow: -2px 2px 3px red;
-}
-
-input:active, input:hover{
-  box-shadow: 0px 0px 12px #ffca28;
-}
-
-.form:hover {
-  box-shadow: 0px 0px 12px yellow;
-}
-.form:active {
-  box-shadow: 0px 0px 12px #ffca28;
-}
-
-/* Webkit browsers like Safari and Chrome */
-input::-webkit-inner-spin-button,
-input::-webkit-outer-spin-button {
-    -webkit-appearance: none;
-    margin: 0;
+.link:hover {
+  text-decoration: underline;
 }

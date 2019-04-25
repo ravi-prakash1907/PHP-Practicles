@@ -45,9 +45,6 @@ function main(){
     <header class="text-center">    <h1>The color list</h1>    </header> <br />
 
     <div id="container">
-    <div id="menu">
-
-    </div>
 
     <form action="" method="POST" class="form">
 
