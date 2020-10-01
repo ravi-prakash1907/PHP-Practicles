@@ -1,5 +1,5 @@
 # PHP-Practicles
 
+It holds all the practicals as per the syllabus of University of Delhi's B.Sc. (Hons.) Computer Science course.
 
-It holds all the practicles as per the syllabus of University of Delhi's B.Sc. (Hons.) Computer Science course.<br />
-In order to run this project, the very first taske, that has to be done is: you need to **rename** ```main.php``` to ```index.php```
+In order to run this project just **rename** ```main.php``` to ```index.php``` and then copy all the files to web root directory of your server.
